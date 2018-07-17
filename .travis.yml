@@ -16,6 +16,9 @@ before_script:
 script:
   - npm run build
 
+before_deploy:
+  - rm bundle/.gitignore # Make sure that the bundle will be pushed
+
 deploy:
   provider: pages
   skip_cleanup: true
