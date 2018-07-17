@@ -1,36 +1,54 @@
 <template lang="html">
   <v-app dark>
+    <!-- Just disable it for now -->
     <v-navigation-drawer
+      v-if="false"
       app
-      fixed
       v-model="drawer"
+      :mini-variant="mini"
     >
-    <v-toolbar flat class="transparent">
-        <v-list class="pa-0">
-          <v-list-tile avatar>
-            <v-list-tile-avatar>
-              <img src="./static/images/profile/profile.svg" >
-            </v-list-tile-avatar>
-
-            <v-list-tile-content>
-              <v-list-tile-title>{{author}}</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
-        </v-list>
-      </v-toolbar>
     </v-navigation-drawer>
+
     <v-toolbar app>
-      <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-      <v-toolbar-title>
-        <span class="subheading">
-          <code>127.0.0.1</code> of
-        </span>
-        <span class="title">{{author}}</span>
+      <v-toolbar-side-icon v-if="false" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+      <v-toolbar-title :title="homeLink.title">
+        <router-link to="/">
+          <a><small><code>{{homeLink.text}}</code></small></a>
+        </router-link>
       </v-toolbar-title>
     </v-toolbar>
+
     <v-content>
       <v-container fluid>
-        <router-view></router-view>
+        <v-layout align-center justify-center>
+          <v-flex xs12 sm6>
+            <v-card light>
+              <v-card-media
+                src="static/images/tux-the-traveler.jpg"
+                height="200px"
+              >
+                <v-subheader :title="tuxCaption.title"><code>{{tuxCaption.text}}</code></v-subheader>
+              </v-card-media>
+              <v-card-title primary-title>
+                <div class="headline">{{author}}</div>
+              </v-card-title>
+              <v-card-title>
+                <div>
+                  <h3>Information to put here?</h3>
+                  <ul>
+                    <li>Email</li>
+                    <li>Github</li>
+                    <li>Keybase/GPG public key</li>
+                    <li>LinkedIN</li>
+                    <li>Twitter?</li>
+                    <li>Steam?</li>
+                    <li>LastFM?</li>
+                  </ul>
+                </div>
+              </v-card-title>
+            </v-card>
+          </v-flex>
+        </v-layout>
       </v-container>
     </v-content>
   </v-app>
@@ -44,14 +62,20 @@ export default {
   name: 'App',
   data: () => {
     return {
-      drawer: undefined
+      homeLink: _.sample([
+        { text: '127.0.0.1', title: 'I tried to come up with an IPv4 joke, but the good ones were all already exhausted.' },
+        { text: '::1', title: "The problem with IPv6 jokes is they're long, obscure and no one gets them without translation." }
+      ]),
+      tuxCaption: _.sample([
+        { text: 'A wild Tux appears!', title: "I'm sorry, I could not found a GNU." },
+        { text: 'Tux In The Wild', title: "I don't think plush tux-es contain much protein; I think I stick with worms and snakes in the wild." }
+      ])
     };
   },
   computed: {
-    author: () => _.get(appInfo, 'author', ''),
-    year: () => {return (new Date()).getFullYear()}
+    author: () => _.get(appInfo, 'author', '')
   }
-}
+};
 </script>
 
 <style lang="css" scoped>
