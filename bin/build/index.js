@@ -11,16 +11,16 @@ const defaultOpts = {
   entries: ENTRIES,
   transform: [
     [
-      "browserify-css"
+      'browserify-css'
     ],
     [
-      "babelify"
+      'babelify'
     ],
     [
-      "vueify"
+      'vueify'
     ],
     [
-      "git-describeify"
+      'git-describeify'
     ]
   ],
   extensions: ['vue']
