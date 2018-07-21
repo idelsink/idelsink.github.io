@@ -1,7 +1,6 @@
 // import 'babel-polyfill';
 import Vue from 'vue';
-import Vuetify from 'vuetify'
-
+import Vuetify from 'vuetify';
 import router from './js/router';
 
 require('./css/app.css'); // Styles
