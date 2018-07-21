@@ -28,5 +28,5 @@ const defaultOpts = {
 
 module.exports = {
   defaultOpts: defaultOpts,
-  createDefaultStream: () => { return fs.createWriteStream(OUTPUT)}
+  createDefaultStream: () => fs.createWriteStream(OUTPUT)
 };
