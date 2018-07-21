@@ -9,8 +9,8 @@ Vue.config.productionTip = false; // Disable the "You are running Vue in develop
 
 Vue.use(Vuetify);
 
-new Vue({
+(() => new Vue({
   el: '#app',
   router: router,
   render: h => h('router-view')
-});
+}))();
