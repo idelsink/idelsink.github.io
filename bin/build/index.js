@@ -23,8 +23,8 @@ const defaultOpts = {
       'git-describeify'
     ]
   ],
-  extensions: ['vue']
-}
+  extensions: ['.vue']
+};
 
 module.exports = {
   defaultOpts: defaultOpts,
