@@ -81,6 +81,7 @@ export default {
         { FAIcon: {name: 'brands/keybase', scale: 1.5}, divider: { inset: false }, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
         { FAIcon: {name: 'brands/lastfm', scale: 1.5, color: '#b91015'}, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/MrCrazyID', target: '_blank' },
         { FAIcon: {name: 'brands/twitter', scale: 1.5, color: '#00aced'}, header: '', title: 'Twitter', subTitle: 'twitter.com/idelsink', iconAction: '', href: 'https://twitter.com/idelsink', target: '_blank' },
+        { FAIcon: {name: 'brands/instagram', scale: 1.5, color: 'black'}, title: 'Instagram', subTitle: 'instagram.com/idelsink', iconAction: '', href: 'https://www.instagram.com/idelsink', target: '_blank' },
         { FAIcon: {name: 'brands/steam', scale: 1.5, color: 'black'}, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/MrCrazyID/', target: '_blank' }
 
       ]
