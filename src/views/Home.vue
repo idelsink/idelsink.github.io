@@ -49,7 +49,7 @@
           </v-list-tile-content>
         </v-list-tile>
 
-        <v-divider v-if="item.divider" light inset></v-divider>
+        <v-divider v-if="item.divider" light v-bind:inset="item.divider.inset"></v-divider>
       </template>
     </v-list>
   </LayoutCenteredCard>
@@ -78,7 +78,7 @@ export default {
         { FAIcon: {name: 'brands/linkedin', color: '#0077b5'}, header: '', title: 'LinkedIn', subTitle: 'linkedin.com/in/idelsink', iconAction: '', href: 'https://linkedin.com/in/idelsink/', target: '_blank' },
         // Section name ideas; Community / Social / Professional / Social media / Social outlets / Platforms / Public profiles
         { FAIcon: {name: 'brands/github', scale: 1.5, color: '#1b1817'}, divider: false, header: 'Other platforms', title: 'Github', subTitle: 'My public projects', iconAction: '', href: 'https://github.com/idelsink', target: '_blank' },
-        { FAIcon: {name: 'brands/keybase', scale: 1.5}, divider: true, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
+        { FAIcon: {name: 'brands/keybase', scale: 1.5}, divider: { inset: false }, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
         { FAIcon: {name: 'brands/lastfm', scale: 1.5, color: '#b91015'}, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/MrCrazyID', target: '_blank' },
         { FAIcon: {name: 'brands/twitter', scale: 1.5, color: '#00aced'}, header: '', title: 'Twitter', subTitle: 'twitter.com/idelsink', iconAction: '', href: 'https://twitter.com/idelsink', target: '_blank' },
         { FAIcon: {name: 'brands/steam', scale: 1.5, color: 'black'}, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/MrCrazyID/', target: '_blank' }
