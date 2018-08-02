@@ -74,8 +74,8 @@ export default {
       ]),
       listItems: [
         // Section name ideas; Contact info / Social Media / Professional (look/perspective?) / Public profile
-        { FAIcon: {name: 'regular/envelope'}, divider: false, header: 'Contact info', title: 'ingmar@dels.ink', subTitle: 'Send me a message!', iconAction: 'message', href: 'mailto:ingmar@dels.ink?subject=Well%20hi%20there&body=Greetings%20Ingmar%2c%20I%27m%20here%3b%20from%20the%20future%21%0a%0a%0a' },
-        { FAIcon: {name: 'brands/linkedin', color: '#0077b5'}, header: '', title: 'LinkedIn', subTitle: 'linkedin.com/in/idelsink', iconAction: '', href: 'https://linkedin.com/in/idelsink/', target: '_blank' },
+        { FAIcon: {name: 'regular/envelope', scale: 1.5}, divider: false, header: 'Contact info', title: 'ingmar@dels.ink', subTitle: 'Send me a message!', iconAction: 'message', href: 'mailto:ingmar@dels.ink?subject=Well%20hi%20there&body=Greetings%20Ingmar%2c%20I%27m%20here%3b%20from%20the%20future%21%0a%0a%0a' },
+        { FAIcon: {name: 'brands/linkedin', scale: 1.5, color: '#0077b5'}, header: '', title: 'LinkedIn', subTitle: 'linkedin.com/in/idelsink', iconAction: '', href: 'https://linkedin.com/in/idelsink/', target: '_blank' },
         // Section name ideas; Community / Social / Professional / Social media / Social outlets / Platforms / Public profiles
         { FAIcon: {name: 'brands/github', scale: 1.5, color: '#1b1817'}, divider: false, header: 'Other platforms', title: 'Github', subTitle: 'My public projects', iconAction: '', href: 'https://github.com/idelsink', target: '_blank' },
         { FAIcon: {name: 'brands/keybase', scale: 1.5}, divider: { inset: false }, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
