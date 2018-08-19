@@ -1,7 +1,13 @@
 <template lang="html">
   <LayoutCenteredCard>
-    <h1>About this website</h1>
-    <pre>Site version: <code>{{appVersion}}</code></pre>
+    <div>
+      <div class="ml-3 mr-3">
+        <h1>About this website</h1>
+        <p>
+          <pre>Site version: <code>{{appVersion}}</code></pre>
+        </p>
+      </div>
+    </div>
   </LayoutCenteredCard>
 </template>
 
