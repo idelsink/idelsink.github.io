@@ -16,7 +16,7 @@ Make sure that `npm` is installed.
    ```
 2. Run the local webserver which serves the files. It also watches the files and transpiles them on the fly:
    ```sh
-   npm run dev
+   npm start
    ```
 
 ## Site deployment

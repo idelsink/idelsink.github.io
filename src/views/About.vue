@@ -4,7 +4,7 @@
       <div class="ml-3 mr-3">
         <h1>About this website</h1>
         <p>
-          <pre>Site version: <code>{{appVersion}}</code></pre>
+          <pre>Site version: <code>{{ appVersion }}</code></pre>
         </p>
       </div>
     </div>
@@ -13,8 +13,7 @@
 
 <script>
 import _ from 'lodash';
-import appInfo from '../js/app-info';
-import LayoutCenteredCard from '../components/layout/centered-card.vue';
+import LayoutCenteredCard from '../components/CenteredCard';
 
 export default {
   name: 'About',
@@ -23,16 +22,13 @@ export default {
   },
   data: function () {
     return {
-      appInfo
+      gitInfo: GIT_DESCRIBE
     };
   },
   computed: {
     appVersion: function () {
-      return _.get(this.appInfo, 'gitInfo.tag');
+      return _.get(this.gitInfo, 'tag');
     }
   }
 };
 </script>
-
-<style lang="css">
-</style>
