@@ -40,7 +40,7 @@
           >
             <VListTileAction>
               <VListTileAvatar size="24">
-                <img src="https://ingmar.dels.ink/spotify-track-preview/static/images/favicon.png">
+                <img src="https://ingmar.dels.ink/spotify-track-preview/favicon.png">
               </VListTileAvatar>
             </VListTileAction>
             <VListTileContent>
