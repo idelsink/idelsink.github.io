@@ -51,6 +51,7 @@
             <VListItemAction>
               <img
                 width="24"
+                height="24"
                 :aspect-ratio="1"
                 src="https://ingmar.dels.ink/spotify-track-preview/favicon.png"
               >
