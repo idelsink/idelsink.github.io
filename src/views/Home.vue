@@ -60,49 +60,42 @@
           {{ item.header }}
         </VSubheader>
 
-        <VListTile
+        <VListItem
           :key="index+'tile'"
           :to="item.to"
           :href="item.href"
           :target="item.target"
         >
-          <VListTileAvatar>
+          <VListItemAvatar>
             <VIcon
-              v-if="item.icon"
-              :color="iconColor"
+              :color="item.icon && item.icon.color"
+              :large="(item.icon && item.icon.large) || false"
             >
-              {{ item.icon }}
+              {{ item.icon && item.icon.name }}
             </VIcon>
-            <FontAwesomeIcon
-              v-else-if="item.FAIcon"
-              :color="item.FAIcon.color"
-              :class="item.FAIcon.class || (item.FAIcon.color ? '' : (iconColor + '--text'))"
-              :size="item.FAIcon.size"
-              :icon="item.FAIcon.icon"
-            />
-          </VListTileAvatar>
+          </VListItemAvatar>
 
-          <VListTileContent>
+          <VListItemContent>
             <!-- eslint-disable vue/no-v-html -->
-            <VListTileTitle
+            <VListItemTitle
               v-if="item.titleHtml"
               v-html="item.titleHtml"
             />
-            <VListTileTitle v-else>
+            <VListItemTitle v-else>
               {{ item.title }}
-            </VListTileTitle>
-            <VListTileSubTitle
+            </VListItemTitle>
+            <VListItemSubtitle
               v-if="item.subTitleHtml"
               v-html="item.subTitleHtml"
             >
               {{ item.subTitleHtml }}
-            </VListTileSubTitle>
+            </VListItemSubtitle>
             <!-- eslint-enable vue/no-v-html -->
-            <VListTileSubTitle v-else>
+            <VListItemSubtitle v-else>
               {{ item.subTitle }}
-            </VListTileSubTitle>
-          </VListTileContent>
-        </VListTile>
+            </VListItemSubtitle>
+          </VListItemContent>
+        </VListItem>
 
         <VDivider
           v-if="item.divider"
@@ -132,15 +125,15 @@ export default {
       ]),
       listItems: [
         // Section name ideas; Contact info / Social Media / Professional (look/perspective?) / Public profile
-        { FAIcon: { icon: 'envelope', size: '2x' }, divider: false, header: 'Contact info', title: 'ingmar@dels.ink', subTitle: 'Send me a message!', iconAction: 'message', href: 'mailto:ingmar@dels.ink?subject=Well%20hi%20there&body=Greetings%20Ingmar%2c%20I%27m%20here%3b%20from%20the%20future%21%0a%0a%0a' },
-        { FAIcon: { icon: ['fab', 'linkedin'], size: '2x', color: '#0077b5' }, header: '', title: 'LinkedIn', subTitle: 'linkedin.com/in/idelsink', iconAction: '', href: 'https://linkedin.com/in/idelsink/', target: '_blank' },
+        { icon: { name: 'fas fa-envelope', large: true }, divider: false, header: 'Contact info', title: 'ingmar@dels.ink', subTitle: 'Send me a message!', iconAction: 'message', href: 'mailto:ingmar@dels.ink?subject=Well%20hi%20there&body=Greetings%20Ingmar%2c%20I%27m%20here%3b%20from%20the%20future%21%0a%0a%0a' },
+        { icon: { name: 'fab fa-linkedin', large: true, color: '#0077b5' }, header: '', title: 'LinkedIn', subTitle: 'linkedin.com/in/idelsink', iconAction: '', href: 'https://linkedin.com/in/idelsink/', target: '_blank' },
         // Section name ideas; Community / Social / Professional / Social media / Social outlets / Platforms / Public profiles
-        { FAIcon: { icon: ['fab', 'github'], size: '2x', color: '#1b1817' }, divider: false, header: 'Other platforms', title: 'Github', subTitle: 'My public projects', iconAction: '', href: 'https://github.com/idelsink', target: '_blank' },
-        { FAIcon: { icon: ['fab', 'keybase'], size: '2x' }, divider: { inset: false }, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
-        { FAIcon: { icon: ['fab', 'lastfm'], size: '2x', color: '#b91015' }, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/MrCrazyID', target: '_blank' },
-        { FAIcon: { icon: ['fab', 'twitter'], size: '2x', color: '#00aced' }, header: '', title: 'Twitter', subTitle: 'twitter.com/idelsink', iconAction: '', href: 'https://twitter.com/idelsink', target: '_blank' },
-        { FAIcon: { icon: ['fab', 'instagram'], size: '2x', color: 'black' }, title: 'Instagram', subTitle: 'instagram.com/idelsink', iconAction: '', href: 'https://www.instagram.com/idelsink', target: '_blank' },
-        { FAIcon: { icon: ['fab', 'steam'], size: '2x', color: 'black' }, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/MrCrazyID/', target: '_blank' }
+        { icon: { name: 'fab fa-github', large: true, color: '#1b1817' }, divider: false, header: 'Other platforms', title: 'Github', subTitle: 'My public projects', iconAction: '', href: 'https://github.com/idelsink', target: '_blank' },
+        { icon: { name: 'fab fa-keybase', large: true }, divider: { inset: false }, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
+        { icon: { name: 'fab fa-lastfm', large: true, color: '#b91015' }, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/MrCrazyID', target: '_blank' },
+        { icon: { name: 'fab fa-twitter', large: true, color: '#00aced' }, header: '', title: 'Twitter', subTitle: 'twitter.com/idelsink', iconAction: '', href: 'https://twitter.com/idelsink', target: '_blank' },
+        { icon: { name: 'fab fa-instagram', large: true, color: 'black' }, title: 'Instagram', subTitle: 'instagram.com/idelsink', iconAction: '', href: 'https://www.instagram.com/idelsink', target: '_blank' },
+        { icon: { name: 'fab fa-steam', large: true, color: 'black' }, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/MrCrazyID/', target: '_blank' }
       ]
     };
   }

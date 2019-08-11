@@ -1,10 +1,16 @@
 <template lang="html">
   <VContent>
     <VContainer fluid>
-      <VLayout align-center justify-center>
-        <VFlex xs12 sm6>
+      <VLayout
+        align-center
+        justify-center
+      >
+        <VFlex
+          xs12
+          sm6
+        >
           <VCard light>
-            <slot></slot>
+            <slot />
           </VCard>
         </VFlex>
       </VLayout>

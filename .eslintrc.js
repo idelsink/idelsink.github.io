@@ -4,19 +4,18 @@ module.exports = {
     node: true
   },
   globals: {
-    'GIT_DESCRIBE': true
+    GIT_DESCRIBE: true
   },
   extends: [
-    'plugin:vue/essential',
-    '@vue/standard',
+    'plugin:vue/recommended',
     'semistandard'
   ],
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'vue/component-name-in-template-casing': ['error', 'PascalCase' | 'kebab-case', {
-      'registeredComponentsOnly': false,
-      'ignores': []
+    'no-console': 'off',
+    'no-debugger': 'off',
+    'vue/component-name-in-template-casing': ['error', 0, {
+      registeredComponentsOnly: false,
+      ignores: []
     }]
   },
   parserOptions: {
