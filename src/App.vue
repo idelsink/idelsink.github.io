@@ -41,11 +41,7 @@
           value="true"
         >
           <template #activator>
-            <VListItem>
-              <VListItemContent>
-                <VListItemTitle>Projects</VListItemTitle>
-              </VListItemContent>
-            </VListItem>
+            <VListItemTitle>Projects</VListItemTitle>
           </template>
 
           <VListItem
@@ -53,9 +49,11 @@
             target="_blank"
           >
             <VListItemAction>
-              <VListItemAvatar size="24">
-                <img src="https://ingmar.dels.ink/spotify-track-preview/favicon.png">
-              </VListItemAvatar>
+              <img
+                width="24"
+                :aspect-ratio="1"
+                src="https://ingmar.dels.ink/spotify-track-preview/favicon.png"
+              >
             </VListItemAction>
             <VListItemContent>
               <VListItemTitle>Spotify track preview</VListItemTitle>
