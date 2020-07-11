@@ -137,7 +137,7 @@ export default {
         // Section name ideas; Community / Social / Professional / Social media / Social outlets / Platforms / Public profiles
         { FAIcon: { icon: ['fab', 'github'], size: '2x', color: '#1b1817' }, divider: false, header: 'Other platforms', title: 'Github', subTitle: 'My public projects', iconAction: '', href: 'https://github.com/idelsink', target: '_blank' },
         { FAIcon: { icon: ['fab', 'keybase'], size: '2x' }, divider: { inset: false }, title: 'Keybase', subTitleHtml: '64-bit: <code>6BFF 495F 6EF4 6E6E</code>', href: 'https://keybase.io/binbash', target: '_blank' },
-        { FAIcon: { icon: ['fab', 'lastfm'], size: '2x', color: '#b91015' }, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/MrCrazyID', target: '_blank' },
+        { FAIcon: { icon: ['fab', 'lastfm'], size: '2x', color: '#b91015' }, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/ingmagination', target: '_blank' },
         { FAIcon: { icon: ['fab', 'twitter'], size: '2x', color: '#00aced' }, header: '', title: 'Twitter', subTitle: 'twitter.com/idelsink', iconAction: '', href: 'https://twitter.com/idelsink', target: '_blank' },
         { FAIcon: { icon: ['fab', 'instagram'], size: '2x', color: 'black' }, title: 'Instagram', subTitle: 'instagram.com/idelsink', iconAction: '', href: 'https://www.instagram.com/idelsink', target: '_blank' },
         { FAIcon: { icon: ['fab', 'steam'], size: '2x', color: 'black' }, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/MrCrazyID/', target: '_blank' }
