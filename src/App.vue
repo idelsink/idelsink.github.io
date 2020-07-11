@@ -1,67 +1,68 @@
 <template lang="html">
-  <VApp dark>
-    <VNavigationDrawer
-      v-model="drawer"
+  <VApp>
+    <VAppBar
       app
-      temporary
-      clipped
-      :mini-variant="mini"
     >
-      <VList>
-        <VListTile exact :to="{name: 'Home'}">
-          <VListTileAction>
-            <VIcon>home</VIcon>
-          </VListTileAction>
-          <VListTileContent>
-            <VListTileTitle>Home</VListTileTitle>
-          </VListTileContent>
-        </VListTile>
-        <VListTile :to="{name: 'About'}">
-          <VListTileAction>
-            <VIcon>info</VIcon>
-          </VListTileAction>
-          <VListTileContent>
-            <VListTileTitle>About</VListTileTitle>
-          </VListTileContent>
-        </VListTile>
-        <VListGroup
-          prepend-icon="code"
-          value="true"
-        >
-          <VListTile slot="activator">
-            <VListTileContent>
-              <VListTileTitle>Projects</VListTileTitle>
-            </VListTileContent>
-          </VListTile>
-
-          <VListTile
-            href="./spotify-track-preview"
-            target="_blank"
-          >
-            <VListTileAction>
-              <VListTileAvatar size="24">
-                <img src="https://ingmar.dels.ink/spotify-track-preview/static/images/favicon.png">
-              </VListTileAvatar>
-            </VListTileAction>
-            <VListTileContent>
-              <VListTileTitle>Spotify track preview</VListTileTitle>
-            </VListTileContent>
-          </VListTile>
-        </VListGroup>
-      </VList>
-    </VNavigationDrawer>
-    <VToolbar
-      app
-      fixed
-      clipped-left
-    >
-      <VToolbarSideIcon @click.stop="drawer = !drawer" />
+      <VAppBarNavIcon @click.stop="drawer = !drawer" />
       <VToolbarTitle :title="toolbar.title">
         <RouterLink to="/">
           <a><small><code>{{ toolbar.text }}</code></small></a>
         </RouterLink>
       </VToolbarTitle>
-    </VToolbar>
+    </VAppBar>
+
+    <VNavigationDrawer
+      v-model="drawer"
+      app
+      temporary
+    >
+      <VList>
+        <VListItem
+          exact
+          :to="{name: 'Home'}"
+        >
+          <VListItemAction>
+            <VIcon>fas fa-home</VIcon>
+          </VListItemAction>
+          <VListItemContent>
+            <VListItemTitle>Home</VListItemTitle>
+          </VListItemContent>
+        </VListItem>
+        <VListItem :to="{name: 'About'}">
+          <VListItemAction>
+            <VIcon>fas fa-info-circle</VIcon>
+          </VListItemAction>
+          <VListItemContent>
+            <VListItemTitle>About</VListItemTitle>
+          </VListItemContent>
+        </VListItem>
+        <VListGroup
+          prepend-icon="fas fa-code"
+          value="true"
+        >
+          <template #activator>
+            <VListItemTitle>Projects</VListItemTitle>
+          </template>
+
+          <VListItem
+            href="./spotify-track-preview"
+            target="_blank"
+          >
+            <VListItemAction>
+              <img
+                width="24"
+                height="24"
+                :aspect-ratio="1"
+                src="https://ingmar.dels.ink/spotify-track-preview/favicon.png"
+              >
+            </VListItemAction>
+            <VListItemContent>
+              <VListItemTitle>Spotify track preview</VListItemTitle>
+            </VListItemContent>
+          </VListItem>
+        </VListGroup>
+      </VList>
+    </VNavigationDrawer>
     <RouterView />
   </VApp>
 </template>
