@@ -12,7 +12,6 @@
     <VNavigationDrawer
       v-model="drawer"
       app
-      temporary
     >
       <VList>
         <VListItem
