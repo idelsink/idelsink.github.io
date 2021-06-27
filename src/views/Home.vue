@@ -1,16 +1,14 @@
 <template lang="html">
   <LayoutCenteredCard>
     <VImg
-      :src="require('../assets/tux-the-traveler.jpg')"
+      :lazy-src="require('../assets/tux-the-traveler-compressed.jpg')"
+      :src="require('../assets/tux-the-traveler-optimized.jpg')"
       height="200px"
     >
       <VLayout
         column
         fill-height
       >
-        <VSubheader :title="tuxCaption.title">
-          <code>{{ tuxCaption.text }}</code>
-        </VSubheader>
         <VSpacer />
         <VCardTitle
           primary-title
@@ -41,8 +39,8 @@
       </VSubheader>
       <div class="ml-3 mr-3">
         <p>
-          I'm an Embedded Systems Engineer living in The Netherlands.
-          In my daily life I try to convince the computer to do what I tell it to do.
+          I'm a Dutch Embedded Systems Engineer living in Berlin. In my daily
+          life I try to convince the computer to do what I tell it to do.
         </p>
       </div>
     </div>
@@ -109,7 +107,6 @@
 </template>
 
 <script>
-import _ from 'lodash';
 import LayoutCenteredCard from '../components/CenteredCard';
 export default {
   name: 'Home',
@@ -118,11 +115,6 @@ export default {
   },
   data: () => {
     return {
-      iconColor: 'indigo',
-      tuxCaption: _.sample([
-        { text: 'A wild Tux appears!', title: "I'm sorry, I could not found a GNU." },
-        { text: 'Tux In The Wild', title: "I don't think plush tux-es contain much protein; I think I stick with worms and snakes in the wild." }
-      ]),
       listItems: [
         // Section name ideas; Contact info / Social Media / Professional (look/perspective?) / Public profile
         { icon: { name: 'fas fa-envelope', large: true }, divider: false, header: 'Contact info', title: 'ingmar@dels.ink', subTitle: 'Send me a message!', iconAction: 'message', href: 'mailto:ingmar@dels.ink?subject=Well%20hi%20there&body=Greetings%20Ingmar%2c%20I%27m%20here%3b%20from%20the%20future%21%0a%0a%0a' },

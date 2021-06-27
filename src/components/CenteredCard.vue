@@ -1,5 +1,5 @@
 <template lang="html">
-  <VContent>
+  <VMain>
     <VContainer fluid>
       <VLayout
         align-center
@@ -15,7 +15,7 @@
         </VFlex>
       </VLayout>
     </VContainer>
-  </VContent>
+  </VMain>
 </template>
 
 <script>

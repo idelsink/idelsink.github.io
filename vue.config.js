@@ -3,5 +3,9 @@ module.exports = {
     gitDescribe: {
       variableName: 'GIT_DESCRIBE'
     }
-  }
+  },
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 };

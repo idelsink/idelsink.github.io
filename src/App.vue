@@ -5,9 +5,7 @@
     >
       <VAppBarNavIcon @click.stop="drawer = !drawer" />
       <VToolbarTitle :title="toolbar.title">
-        <RouterLink to="/">
-          <a><small><code>{{ toolbar.text }}</code></small></a>
-        </RouterLink>
+        {{ toolbar.text }}
       </VToolbarTitle>
     </VAppBar>
 
@@ -86,10 +84,11 @@ export default {
     toolbar: function () {
       switch (_.get(this, '$route.name')) {
         case 'Home':
-          return this.homeLink;
-        default:
+          return { text: '', title: '' };
+        default: {
           const name = _.upperFirst(_.startCase(_.get(this, '$route.name')).toLowerCase());
           return { text: name, title: name };
+        }
       }
     }
   }

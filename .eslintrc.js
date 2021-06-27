@@ -13,7 +13,7 @@ module.exports = {
   rules: {
     'no-console': 'off',
     'no-debugger': 'off',
-    'vue/component-name-in-template-casing': ['error', 0, {
+    'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       registeredComponentsOnly: false,
       ignores: []
     }]
