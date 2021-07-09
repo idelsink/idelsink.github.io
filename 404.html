@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript">
+      // redirect to the correct 404 page with the old location as argument
+      const pageNotFound = '/#/404-page-not-found';
+      const oldLocation = document.location.toString();
+      window.location.replace(document.location.origin + pageNotFound + '?oldLocation=' +oldLocation);
+    </script>
+    <meta charset="utf-8">
+    <title>404 Page not found</title>
+  </head>
+  <body>
+  </body>
+</html>

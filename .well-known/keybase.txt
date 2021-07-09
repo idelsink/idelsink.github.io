@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/binbash
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://ingmar.dels.ink
+  * I am binbash (https://keybase.io/binbash) on keybase.
+  * I have a public key with fingerprint 2490 AACA D972 45B5 9ACC  B7A9 6BFF 495F 6EF4 6E6E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101929471ae200e5cd623e143fe5026f5cbad34cd25a4537e8df7109ccd5d460d530a",
+      "fingerprint": "2490aacad97245b59accb7a96bff495f6ef46e6e",
+      "host": "keybase.io",
+      "key_id": "6bff495f6ef46e6e",
+      "kid": "0101929471ae200e5cd623e143fe5026f5cbad34cd25a4537e8df7109ccd5d460d530a",
+      "uid": "dc2def292c9bee70ea838fa0bf54a919",
+      "username": "binbash"
+    },
+    "service": {
+      "hostname": "ingmar.dels.ink",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1531947826,
+  "expire_in": 157680000,
+  "prev": "cdcc3242d00ef6c3657018fd5f5d26ff862898dbf838cfa4fb4d2d08ecb474be",
+  "seqno": 86,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.77
+Comment: https://keybase.io/crypto
+
+yMIkAnicrVJbbA1BGD6HKj0hGkUFIVZSCXXszs7s5SSuaaIRQYsEbXMyO5d2td09
+3d3TapriRUgkWoRWPSglqiI0XiSqUXGJeCDRuCte0EYQvJQmzDb15tG8TOaf7/v+
+7//y354yPhKLNpdVO8ZUOBB90NeWjpRsvAgaJMul9VKiQapkoxeroswPkpU2lRKS
+rMiKCUyoK5gBWWaIUA2oTIEqZ0gGGkfEwlSFhAKEIVJ1ZlCuK7JJCEUUajJFqoyl
+fInbTjnzUp7tBEIWQFPGmGBq6gAiC5mYEEvHpmZxDk3ENcahxjQmiBWuHzKEOQv7
+LG67oiYeyVF7/8D/Z9/pUTlKAGUcmICYFmO6zLChGhzLFkcQm4oZAn3mObiaCbRl
+O8JrhdSYL4lirU1YmGs4yBhAZFGNvThlVX7cdioFO+W5gUvcKvFZEQQpPxGSg/pU
+iK5jVnJMJymkqWALRi3zfNt1pIQikCSwQ2EFqYqY2QBavsR2pWyPJe0QgXTNkMUJ
++7BaIUkoISqAgIpouEZUDemyYnCKOKIiHG5owDANanExJuEYcgtSATYYsaAOrTBn
+n9U4rpQwRKsAlwtN3y53cJD2mNR462ZpRiQai2ROGBeuWCSWlf138QqzJo7EWmam
+lxyY03plcXHOly1tLTXmyZ7X7Y/K+toaLu/ubZ29e0bm/lPfh0auuPXahsJ0L+//
+9bq1/mX/q3J47mn0m74wu6Mz7n8+ffrgpuGZw+vHeWuWztPuN/2ItxdPu+tr0Rs/
+c8+uKN2Rt+7A76Bw3eS8NwU90Xbnxdymm6Xd0augr/vDrwvra61VbYe7VmNQlDe/
++rx+1u+6MzSpucwe2Nl74sxDegotwyvf39s+uWnrnvy3swrOnFu+urUkp2ltt7w5
+UjZ/y8j1ume5GcXvBvqdJ9cGL00oyDo2GOvM3jfw5tbx6V2LnresWkAOfXwcK3Hv
+7uuY8/7r0b3bsFXU23hk0qfmP2lRP6k=
+=8kVS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/binbash
+
+==================================================================
