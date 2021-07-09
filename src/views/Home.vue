@@ -125,7 +125,7 @@ export default {
         { icon: { name: 'fab fa-lastfm', large: true, color: '#b91015' }, header: '', title: 'LastFM', subTitle: 'Listen all the music!', iconAction: '', href: 'https://last.fm/user/ingmagination', target: '_blank' },
         { icon: { name: 'fab fa-twitter', large: true, color: '#00aced' }, header: '', title: 'Twitter', subTitle: 'twitter.com/idelsink', iconAction: '', href: 'https://twitter.com/idelsink', target: '_blank' },
         { icon: { name: 'fab fa-instagram', large: true, color: 'black' }, title: 'Instagram', subTitle: 'instagram.com/idelsink', iconAction: '', href: 'https://www.instagram.com/idelsink', target: '_blank' },
-        { icon: { name: 'fab fa-steam', large: true, color: 'black' }, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/MrCrazyID/', target: '_blank' }
+        { icon: { name: 'fab fa-steam', large: true, color: 'black' }, header: '', title: 'Steam', subTitle: '', iconAction: '', href: 'https://steamcommunity.com/id/ingmagination/', target: '_blank' }
       ]
     };
   }
